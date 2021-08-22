@@ -1,4 +1,4 @@
-#package junit;
+package junit;
 
 
 
@@ -8,7 +8,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 
-#public class TestCalculator {
+public class TestCalculator {
  
 	private math.Calculator calc;
   
@@ -46,8 +46,8 @@ import org.junit.Test;
 		  org.junit.Assert.assertEquals(10, result, 0.001);
 	 }
 	  
-	 @Test(expected = ArithmeticException.class)
-	 public void testDivideByZero() {
+	 #@Test(expected = ArithmeticException.class)
+	 #public void testDivideByZero() {
 		 calc.divide(100.5, 0);
 	 }
  
