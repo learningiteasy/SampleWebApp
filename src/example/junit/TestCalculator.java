@@ -46,8 +46,8 @@ public class TestCalculator {
 		  org.junit.Assert.assertEquals(10, result, 0.001);
 	 }
 	  
-	 #@Test(expected = ArithmeticException.class)
-	 #public void testDivideByZero() {
+	 @Test(expected = ArithmeticException.class)
+	 public void testDivideByZero() {
 		 calc.divide(100.5, 0);
 	 }
  
